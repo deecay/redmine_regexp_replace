@@ -17,8 +17,8 @@ module RedmineRegexpReplace
      module InstanceMethods
 
        def replace_after_save
-         setting = [[Regexp.new(Setting.plugin_redmine_replace_regexp['from1']),
-                     Setting.plugin_redmine_replace_regexp['to1']]]
+         setting = [[Regexp.new(Setting.plugin_redmine_regexp_replace['from1']),
+                     Setting.plugin_redmine_regexp_replace['to1']]]
          
          if self.class.name == "Issue" && self.description
            setting.each{|pair|
