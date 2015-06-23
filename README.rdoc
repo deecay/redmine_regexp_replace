@@ -1,3 +1,0 @@
-= Redmine Regexp Replace
-
-Redmine plugin replaces issue descriptions and journals with regular expression at save.
